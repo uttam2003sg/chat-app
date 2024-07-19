@@ -9,6 +9,7 @@ import messageRoute from "./routes/message.route.js";
 import { app, server } from "./SocketIO/server.js";
 import { dir } from "console";
 
+
 dotenv.config();
 
 // middleware
