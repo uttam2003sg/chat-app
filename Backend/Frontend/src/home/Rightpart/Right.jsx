@@ -12,7 +12,7 @@ function Right() {
     return setSelectedConversation(null);
   }, [setSelectedConversation]);
   return (
-    <div className="w-full bg-slate-900 text-gray-300">
+    <div className="w-full bg-green-200 text-gray-300">
       <div>
         {!selectedConversation ? (
           <NoChatSelected />
@@ -48,14 +48,14 @@ const NoChatSelected = () => {
           <CiMenuFries className="text-white text-xl" />
         </label>
         <div className="flex h-screen items-center justify-center">
-          <h1 className="text-center">
+          <h1 className="text-center text-black">
             Welcome{" "}
             <span className="font-semibold text-xl">
               {authUser.user.fullname}
             </span>
             <br />
-            No chat selected, please start conversation by selecting anyone to
-            your contacts
+            <p className="text-black">No chat selected, please start conversation by selecting anyone to
+            your contacts</p>
           </h1>
         </div>
       </div>
